@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="グループ_4196" data-name="グループ 4196" transform="translate(-365 -568)">
+    <g id="ICON_24_CheckOn" data-name="ICON/24/CheckOn" transform="translate(365 568)">
+      <g id="楕円形_20" data-name="楕円形 20" fill="#ea7a15" stroke="rgba(0,0,0,0.1)" stroke-width="2">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="11" fill="none"/>
+      </g>
+      <path id="合体_11" data-name="合体 11" d="M4.243,1577.485l-4.95-4.949,1.415-1.415,3.535,3.536,7.071-7.071L12.728,1569Z" transform="translate(6.343 -1560.828)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
