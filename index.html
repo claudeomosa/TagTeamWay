@@ -33,11 +33,11 @@
         </li>
         <li>
           <button
-            onclick="document.getElementById('navmenu').classList.toggle('hidden')"
+            onclick="document.getElementById('navmenu').classList.toggle('hidden'); document.getElementById('main').classList.toggle('opacity-50')"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 ml-3 md:hidden"
+              class="h-6 w-6 ml-3 sm:hidden"
               viewBox="0 0 24 24"
             >
               <path
@@ -59,9 +59,9 @@
     </ul>
 
     <!-- Main content -->
-    <main class="overflow-x-hidden">
+    <main class="overflow-x-hidden" id="main">
       <!-- Header -->
-      <section class="header-section flex flex-col">
+      <section class="header-section flex flex-col z-0">
         <div class="flex flex-row justify-between">
           <div class="pb-20 -mr-32">
             <div class="pt-32 sm:pl-24 pl-10">
