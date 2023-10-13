@@ -8,41 +8,146 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="shadow justify-items-end grid p-3">
+    <nav class="shadow justify-items-end grid p-3 z-0">
       <ul class="flex">
         <li>
           <button
-            class="bg-[#EA7A15] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#d96314]"
+            class="bg-[#EA7A15] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#d96314] hidden sm:block"
           >
             Case
           </button>
         </li>
         <li>
           <button
-            class="bg-[#EA7A15] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#d96314]"
+            class="bg-[#EA7A15] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#d96314] hidden sm:block"
           >
             Demo
           </button>
         </li>
         <li>
           <button
-            class="bg-[#D82B1B] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#690c07]"
+            class="bg-[#D82B1B] px-6 ml-3 rounded-sm text-white text-sm hover:bg-[#690c07] sm:block"
           >
             Order
           </button>
         </li>
+        <li>
+          <button
+            onclick="document.getElementById('navmenu').classList.toggle('hidden')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 ml-3 md:hidden"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M3 18v-2h18v2H3Zm0-5v-2h18v2H3Zm0-5V6h18v2H3Z"
+              />
+            </svg>
+          </button>
+        </li>
       </ul>
     </nav>
+    <ul id="navmenu" class="z-20 shadow float-right p-3 mr-3 hidden">
+      <li>
+        <button class="">Case</button>
+      </li>
+      <li>
+        <button class="">Demo</button>
+      </li>
+    </ul>
+
     <!-- Main content -->
     <main>
       <!-- Header -->
-      <iframe src="header.html" class="w-screen h-screen"></iframe>
+      <section class="sm:h-screen header-section">
+        <div class="pb-20">
+          <div class="pt-20 pl-20">
+            <h1 class="text-6xl font-bold mb-6">SKILLED</h1>
+            <button
+              class="bg-[#D82B1B] rounded-sm hover:bg-[#690c07] text-sm w-9/12 sm:w-[340px] h-[40px] text-white"
+            >
+              FREE TRIAL
+            </button>
+          </div>
+        </div>
+        <div
+          class="features sm:w-[70%] px-6 sm:px-0 md:w-[50%] sm:float-right mx-auto sm:mr-16"
+        >
+          <h2 class="text-center text-xl font-bold mb-2">FEATURE</h2>
+          <ul class="">
+            <li>
+              <div class="flex items-center sm:h-[7rem]">
+                <div class="">
+                  <img
+                    src="assets/icon-1.svg"
+                    alt=""
+                    class="w-[14rem] h-[10rem]"
+                  />
+                </div>
+                <div class="">
+                  <h3 class="font-bold text-lg">Point 1</h3>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center sm:h-[7rem]">
+                <div class="">
+                  <img
+                    src="assets/icon-2.svg"
+                    alt=""
+                    class="w-[14rem] h-[10rem]"
+                  />
+                </div>
+                <div class="">
+                  <h3 class="font-bold text-lg">Point 2</h3>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center sm:h-[7rem]">
+                <div class="">
+                  <img
+                    src="assets/icon-3.svg"
+                    alt=""
+                    class="w-[14rem] h-[10rem]"
+                  />
+                </div>
+                <div class="">
+                  <h3 class="font-bold text-lg">Point 3</h3>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
       <!-- Function section-->
       <section class="bg-[#f5f5f5] function">
-        <div class="w-[70%] mx-auto py-10">
-          <h2 class="text-xl font-bold mb-4">FUNCTION</h2>
-          <div class="grid grid-cols-3 gap-4 grid-flow-row">
-            <div class="bg-white p-4 rounded-sm shadow">
+        <div class="md:w-[70%] sm:mx-auto px-5 py-10">
+          <h2 class="text-xl font-bold mb-4 text-center sm:text-left">
+            FUNCTION
+          </h2>
+          <div class="sm:grid grid-cols-3 gap-4 grid-flow-row">
+            <div class="bg-white p-4 rounded-sm shadow mb-5">
               <h3 class="font-bold text-lg">Function 1</h3>
               <p class="text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -54,7 +159,7 @@
                 To etail
               </button>
             </div>
-            <div class="bg-white p-4 rounded-sm shadow">
+            <div class="bg-white p-4 rounded-sm shadow mb-5">
               <h3 class="font-bold text-lg">Function 2</h3>
               <p class="text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -66,7 +171,7 @@
                 To etail
               </button>
             </div>
-            <div class="bg-white p-4 rounded-sm shadow">
+            <div class="bg-white p-4 rounded-sm shadow mb-6">
               <h3 class="font-bold text-lg">Function 3</h3>
               <p class="text-sm">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -83,9 +188,13 @@
       </section>
       <!-- Price section -->
       <section class="price py-3">
-        <h2 class="text-xl font-bold ml-16 my-3">PRICE</h2>
-        <div class="subscription-plan shadow px-24 py-10 ml-16 mr-32 my-6">
-          <h2 class="text-[#1E2369] text-3xl font-bold mb-3">
+        <h2 class="text-xl font-bold sm:ml-16 my-3 text-center sm:text-left">
+          PRICE
+        </h2>
+        <div
+          class="subscription-plan shadow sm:px-24 sm:py-10 sm:ml-16 sm:mr-32 sm:my-6 mx-6 px-3 pb-6"
+        >
+          <h2 class="text-[#1E2369] text-3xl font-bold mb-3 pt-10">
             Subscription Plan
           </h2>
           <div class="text-sm">
@@ -196,8 +305,12 @@
             </ul>
           </div>
         </div>
-        <div class="purchase-plan shadow px-24 py-10 ml-32 mr-16 my-6">
-          <h2 class="text-[#D82B1B] text-3xl font-bold mb-3">Purchase Plan</h2>
+        <div
+          class="purchase-plan shadow sm:px-24 sm:py-10 sm:ml-32 sm:mr-16 my-6 px-3 mx-6 pb-6"
+        >
+          <h2 class="text-[#D82B1B] text-3xl font-bold mb-3 pt-10">
+            Purchase Plan
+          </h2>
           <div class="text-sm">
             <p class="font-semibold">$50</p>
             <p class="mb-2 font-light">
@@ -280,10 +393,12 @@
             </ul>
           </div>
         </div>
-        <div class="option-plan w-9/12 mx-auto">
-          <h2 class="text-xl font-bold py-3">Option Plan</h2>
-          <div class="grid grid-cols-2 gap-3">
-            <div class="support-menu shadow p-6">
+        <div class="option-plan sm:w-9/12 px-6 sm:px-0 mx-auto">
+          <h2 class="text-xl font-bold py-3 text-center sm:text-left">
+            Option Plan
+          </h2>
+          <div class="sm:grid grid-cols-2 gap-3">
+            <div class="support-menu shadow p-6 mb-6">
               <h3 class="font-bold text-[#2A8B4B]">Support Menu</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -291,7 +406,7 @@
                 explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6">
+            <div class="support-menu shadow p-6 mb-6">
               <h3 class="font-bold text-[#CE286F]">Basic Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -299,7 +414,7 @@
                 explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6">
+            <div class="support-menu shadow p-6 mb-6">
               <h3 class="font-bold text-[#1FA6B2]">Professional Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -307,7 +422,7 @@
                 explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6">
+            <div class="support-menu shadow p-6 mb-6">
               <h3 class="font-bold text-[#EA7A15]">Other Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -323,8 +438,10 @@
         </div>
       </section>
       <!-- Operating Environment -->
-      <section class="w-7/12 mx-auto py-16">
-        <h2 class="text-xl font-bold mb-10">Operating Environment</h2>
+      <section class="sm:w-7/12 sm:mx-auto px-6 sm:px-0 py-16">
+        <h2 class="text-xl font-bold mb-10 text-center sm:text-left">
+          Operating Environment
+        </h2>
         <div class="shadow p-10">
           <h3 class="text-lg font-medium">[Operating Environment]</h3>
           <p class="text-sm font-light ml-[-10px]">
@@ -358,8 +475,10 @@
       </section>
       <!-- Compare Plans -->
       <section class="bg-[#f5f5f5] h-[90vh] py-16">
-        <div class="w-7/12 mx-auto">
-          <h2 class="text-xl font-bold mb-10">Compare Plans</h2>
+        <div class="sm:w-7/12 px-6 sm:mx-auto">
+          <h2 class="text-xl font-bold mb-10 text-center sm:text-left">
+            Compare Plans
+          </h2>
           <div class="mt-8 flow-root">
             <div class="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div
@@ -371,13 +490,13 @@
                       <th scope="col"></th>
                       <th
                         scope="col"
-                        class="py-3.5 pl-4 pr-4 text-center bg-[#1E2369] text-white text-sm font-semibold sm:pl-0"
+                        class="py-3.5 pl-4 pr-4 text-center bg-[#1E2369] text-white text-[0.5rem] sm:text-sm font-semibold sm:pl-0"
                       >
                         Subscription Plan
                       </th>
                       <th
                         scope="col"
-                        class="px-4 py-3.5 text-left text-sm font-semibold text-white bg-[#D82B1B] text-center"
+                        class="px-4 py-3.5 text-left text-[0.5rem] sm:text-sm font-semibold text-white bg-[#D82B1B] text-center"
                       >
                         Purchase Plan
                       </th>
@@ -495,7 +614,7 @@
       </section>
 
       <!-- Flow -->
-      <section class="flow w-7/12 mx-auto h-[90vh] pt-10">
+      <section class="flow sm:w-7/12 mx-5 sm:mx-auto sm:h-[90vh] py-10">
         <h2 class="text-xl font-bold mb-10">Flow</h2>
         <div>
           <ul role="list" class="-mb-8">
@@ -628,11 +747,11 @@
       </section>
       <!-- Contact section -->
       <section class="bg-[#f5f5f5] py-10">
-        <div class="w-7/12 mx-auto bg-white p-8 shadow">
+        <div class="sm:w-7/12 sm:mx-auto mx-3 bg-white p-8 shadow">
           <h2 class="text-center text-lg font-bold">Contact</h2>
           <hr class="my-6" />
           <form action="" class="text-sm">
-            <div class="grid grid-cols-2 gap-3">
+            <div class="sm:grid grid-cols-2 gap-3">
               <div>
                 <label for="company-name" class="block font-semibold">
                   Company Name
@@ -689,7 +808,7 @@
               <label for="zip-code" class="block font-semibold">
                 Zip Code <span class="text-red-500">*</span>
               </label>
-              <div class="flex w-1/2">
+              <div class="flex sm:w-1/2">
                 <input
                   type="text"
                   name="zip-code"
@@ -706,7 +825,7 @@
                 />
               </div>
             </div>
-            <div class="grid-cols-2 grid gap-3">
+            <div class="grid-cols-2 sm:grid gap-3">
               <div>
                 <label for="prefecture" class="block font-semibold"
                   >Prefecture <span class="text-red-500">*</span></label
@@ -752,7 +871,7 @@
               </label>
               <fieldset>
                 <div
-                  class="space-y-4 sm:flex sm:items-center sm:space-x-10 sm:space-y-0"
+                  class="space-y-2 sm:flex sm:items-center sm:space-x-10 sm:space-y-0 my-1"
                 >
                   <div class="flex items-center">
                     <input
@@ -801,7 +920,7 @@
               <label for="goods" class="font-semibold"
                 >Goods <span class="text-red-500">*</span></label
               >
-              <div class="relative w-1/2">
+              <div class="relative sm:w-1/2">
                 <div class="">
                   <button
                     type="button"
@@ -876,7 +995,7 @@
                 placeholder="Add your order detail here"
               ></textarea>
             </div>
-            <div class="w-1/2 mx-auto">
+            <div class="sm:w-1/2 mx-auto">
               <button
                 type="submit"
                 value=""
