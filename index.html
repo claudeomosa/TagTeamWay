@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navbar -->
     <nav class="shadow justify-items-end grid p-3 z-0">
       <ul class="flex">
@@ -59,89 +59,107 @@
     </ul>
 
     <!-- Main content -->
-    <main>
+    <main class="overflow-x-hidden">
       <!-- Header -->
-      <section class="sm:h-screen header-section">
-        <div class="pb-20">
-          <div class="pt-20 pl-20">
-            <h1 class="text-6xl font-bold mb-6">SKILLED</h1>
-            <button
-              class="bg-[#D82B1B] rounded-sm hover:bg-[#690c07] text-sm w-9/12 sm:w-[340px] h-[40px] text-white"
-            >
-              FREE TRIAL
-            </button>
+      <section class="header-section flex flex-col">
+        <div class="flex flex-row justify-between">
+          <div class="pb-20 -mr-32">
+            <div class="pt-32 sm:pl-24 pl-10">
+              <h1 class="sm:text-7xl text-4xl font-bold mb-6">SKILLED</h1>
+              <button
+                class="bg-[#D82B1B] rounded-sm hover:bg-[#690c07] text-sm w-9/12 sm:w-[340px] h-[40px] text-white"
+              >
+                FREE TRIAL
+              </button>
+            </div>
+          </div>
+          <div class="sm:w-[40%] w-[150%]">
+            <img
+              src="assets/img-1.svg"
+              alt="first banner image, has animated images of people"
+              className=""
+            />
           </div>
         </div>
-        <div
-          class="features sm:w-[70%] px-6 sm:px-0 md:w-[50%] sm:float-right mx-auto sm:mr-16"
-        >
-          <h2 class="text-center text-xl font-bold mb-2">FEATURE</h2>
-          <ul class="">
-            <li>
-              <div class="flex items-center sm:h-[7rem]">
-                <div class="">
-                  <img
-                    src="assets/icon-1.svg"
-                    alt=""
-                    class="w-[14rem] h-[10rem]"
-                  />
+        <div class="sm:flex pb-10">
+          <div class="w-[30%] sm:-ml-24 -ml-10 xl:-ml-44">
+            <img
+              src="assets/img-2.svg"
+              alt="first banner image, has animated images of people"
+              className=""
+            />
+          </div>
+          <div
+            class="features sm:w-[70%] px-6 sm:px-0 md:w-[50%] sm:float-right mx-auto sm:mr-16"
+          >
+            <h2 class="text-center text-xl font-bold mb-2">FEATURE</h2>
+            <ul class="">
+              <li>
+                <div class="flex items-center sm:h-[7rem]">
+                  <div class="">
+                    <img
+                      src="assets/icon-1.svg"
+                      alt=""
+                      class="w-[14rem] h-[10rem]"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="font-bold text-lg">Point 1</h3>
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut
+                    </p>
+                  </div>
                 </div>
-                <div class="">
-                  <h3 class="font-bold text-lg">Point 1</h3>
-                  <p class="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut
-                  </p>
+              </li>
+              <li>
+                <div class="flex items-center sm:h-[7rem]">
+                  <div class="">
+                    <img
+                      src="assets/icon-2.svg"
+                      alt=""
+                      class="w-[14rem] h-[10rem]"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="font-bold text-lg">Point 2</h3>
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center sm:h-[7rem]">
-                <div class="">
-                  <img
-                    src="assets/icon-2.svg"
-                    alt=""
-                    class="w-[14rem] h-[10rem]"
-                  />
+              </li>
+              <li>
+                <div class="flex items-center sm:h-[7rem]">
+                  <div class="">
+                    <img
+                      src="assets/icon-3.svg"
+                      alt=""
+                      class="w-[14rem] h-[10rem]"
+                    />
+                  </div>
+                  <div class="">
+                    <h3 class="font-bold text-lg">Point 3</h3>
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                      ullamco laboris nisi ut
+                    </p>
+                  </div>
                 </div>
-                <div class="">
-                  <h3 class="font-bold text-lg">Point 2</h3>
-                  <p class="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center sm:h-[7rem]">
-                <div class="">
-                  <img
-                    src="assets/icon-3.svg"
-                    alt=""
-                    class="w-[14rem] h-[10rem]"
-                  />
-                </div>
-                <div class="">
-                  <h3 class="font-bold text-lg">Point 3</h3>
-                  <p class="text-sm">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <!-- Function section-->
-      <section class="bg-[#f5f5f5] function">
+      <section class="bg-[#f5f5f5] function overflow-x-hidden">
         <div class="md:w-[70%] sm:mx-auto px-5 py-10">
           <h2 class="text-xl font-bold mb-4 text-center sm:text-left">
             FUNCTION
@@ -187,58 +205,109 @@
         </div>
       </section>
       <!-- Price section -->
-      <section class="price py-3">
         <h2 class="text-xl font-bold sm:ml-16 my-3 text-center sm:text-left">
           PRICE
         </h2>
-        <div
-          class="subscription-plan shadow sm:px-24 sm:py-10 sm:ml-16 sm:mr-32 sm:my-6 mx-6 px-3 pb-6"
-        >
-          <h2 class="text-[#1E2369] text-3xl font-bold mb-3 pt-10">
-            Subscription Plan
-          </h2>
-          <div class="text-sm">
-            <p class="font-semibold">$5/Month</p>
-            <p class="mb-2 font-light">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-              explicabo delectus maxime dolor sit consectetur adipisicing elit.
-              Eos explicabo delectus maxime dolor amet consectetur
-              exercitationem, repudiandae quidem?
-            </p>
-            <div class="subscription-feature mb-2">
-              <p class="font-medium">[Feature]</p>
-              <ul class="list-disc ml-2 font-light">
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                    explicabo delectus maxime exercitationem, repudiandae
-                    quidem?
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                    explicabo delectus maxime exercitationem, repudiandae
-                    quidem?
-                  </p>
-                </li>
-              </ul>
+        <div class="grid grid-flow-col auto-cols-max">
+          <div
+            class="subscription-plan shadow sm:px-24 sm:py-10 sm:ml-10 sm:mr-0 sm:my-0 mx-6 px-3 pb-6 z-10 bg-white w-[85vw] relative"
+          >
+            <h2 class="text-[#1E2369] text-3xl font-bold mb-3 pt-10">
+              Subscription Plan
+            </h2>
+            <div class="text-sm">
+              <p class="font-semibold">$5/Month</p>
+              <p class="mb-2 font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                explicabo delectus maxime dolor sit consectetur adipisicing
+                elit. Eos explicabo delectus maxime dolor amet consectetur
+                exercitationem, repudiandae quidem?
+              </p>
+              <div class="subscription-feature mb-2">
+                <p class="font-medium">[Feature]</p>
+                <ul class="list-disc ml-2 font-light">
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="subscription-option">
+                <p class="font-medium">[Option]</p>
+                <ul class="list-disc ml-2 font-light">
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Eos explicabo delectus maxime exercitationem, repudiandae
+                      quidem?
+                    </p>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="subscription-option">
-              <p class="font-medium">[Option]</p>
-              <ul class="list-disc ml-2 font-light">
-                <li>
+            <hr class="my-6" />
+            <div class="subscription-provision font-thin text-sm">
+              <p class="">[Service provision]</p>
+              <ul class="ml-2" style="list-style: '*'">
+                <li class="pl-1">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                     explicabo delectus maxime exercitationem, repudiandae
                     quidem?
                   </p>
                 </li>
-                <li>
+                <li class="pl-1">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
                     explicabo delectus maxime exercitationem, repudiandae
                     quidem?
+                  </p>
+                </li>
+                <li class="pl-1">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    explicabo delectus maxime dolor sit amet consectetur
+                    adipisicing elit. Eos explicabo delectus exercitationem,
+                    repudiandae quidem?
+                  </p>
+                </li>
+                <li class="pl-1">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+                    explicabo delectus maxime exercitationem, ipsum dolor sit
+                    amet consectetur adipisicing elit. Eos explicabo delectus
+                    maxime ex repudiandae quidem?
                   </p>
                 </li>
                 <li>
@@ -258,55 +327,28 @@
               </ul>
             </div>
           </div>
-          <hr class="my-6" />
-          <div class="subscription-provision font-thin text-sm">
-            <p class="">[Service provision]</p>
-            <ul class="ml-2" style="list-style: '*'">
-              <li class="pl-1">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime exercitationem, repudiandae quidem?
-                </p>
-              </li>
-              <li class="pl-1">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime exercitationem, repudiandae quidem?
-                </p>
-              </li>
-              <li class="pl-1">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime dolor sit amet consectetur
-                  adipisicing elit. Eos explicabo delectus exercitationem,
-                  repudiandae quidem?
-                </p>
-              </li>
-              <li class="pl-1">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime exercitationem, ipsum dolor sit amet
-                  consectetur adipisicing elit. Eos explicabo delectus maxime ex
-                  repudiandae quidem?
-                </p>
-              </li>
-              <li>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime exercitationem, repudiandae quidem?
-                </p>
-              </li>
-              <li>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                  explicabo delectus maxime exercitationem, repudiandae quidem?
-                </p>
-              </li>
-            </ul>
+          <div
+            class="sm:w-[100%] w-[20%] z-0 sm:-mt-40 sm:-ml-28 -ml-16 -mt-16"
+          >
+            <img
+              src="assets/img-3.svg"
+              alt="first banner image, has animated images of people"
+              className=""
+            />
           </div>
         </div>
         <div
-          class="purchase-plan shadow sm:px-24 sm:py-10 sm:ml-32 sm:mr-16 my-6 px-3 mx-6 pb-6"
+          class="sm:w-[100%] w-[70%] z-0 sm:-mt-28 sm:-ml-60 relative -ml-24"
+        >
+          <img
+            src="assets/img-4.svg"
+            alt="first banner image, has animated images of people"
+            className=""
+          />
+        </div>
+        <div>
+        <div
+          class="purchase-plan shadow-xl sm:px-28 sm:py-10 sm:ml-32 sm:mr-16 my-6 px-3 mx-6 pb-6 z-10 -mt-28 sm:-mt-80 bg-white relative"
         >
           <h2 class="text-[#D82B1B] text-3xl font-bold mb-3 pt-10">
             Purchase Plan
@@ -393,20 +435,32 @@
             </ul>
           </div>
         </div>
-        <div class="option-plan sm:w-9/12 px-6 sm:px-0 mx-auto">
-          <h2 class="text-xl font-bold py-3 text-center sm:text-left">
+        <div
+        class="sm:w-[100%] w-[50%] z-0 -mt-44 relative sm:ml-[70rem] 2xl:ml-[100rem] ml-48"
+      >
+        <img
+          src="assets/img-5.svg"
+          alt="first banner image, has animated images of people"
+          className=""
+        />
+      </div>
+    </div>
+        <div class="option-plan sm:w-9/12 px-6 sm:px-0 mx-auto -mt-20 z-10 relative">
+          <h2 class="text-xl font-bold py-3 text-center sm:text-left sm:mt-20">
             Option Plan
           </h2>
-          <div class="sm:grid grid-cols-2 gap-3">
-            <div class="support-menu shadow p-6 mb-6">
+          <div class="sm:grid grid-cols-2 gap-3 z-10 relative">
+            <div class="support-menu shadow p-6 mb-6 relative">
+              <img src="assets/green.svg" alt="" class="absolute top-0 left-0 w-8">
               <h3 class="font-bold text-[#2A8B4B]">Support Menu</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                explicabo
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6 mb-6">
+            
+            <div class="support-menu shadow p-6 mb-6 relative">
+              <img src="assets/pink.svg" alt="" class="absolute top-0 left-0 w-8">
               <h3 class="font-bold text-[#CE286F]">Basic Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -414,7 +468,8 @@
                 explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6 mb-6">
+            <div class="support-menu shadow p-6 mb-6 relative">
+              <img src="assets/cyan.svg" alt="" class="absolute top-0 left-0 w-8">
               <h3 class="font-bold text-[#1FA6B2]">Professional Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -422,7 +477,8 @@
                 explicabo
               </p>
             </div>
-            <div class="support-menu shadow p-6 mb-6">
+            <div class="support-menu shadow p-6 mb-6 relative">
+              <img src="assets/orange.svg" alt="" class=" absolute top-0 left-0 w-8">
               <h3 class="font-bold text-[#EA7A15]">Other Customize</h3>
               <p class="font-semibold text-sm">$10/Month</p>
               <p class="text-sm">
@@ -431,18 +487,23 @@
               </p>
             </div>
           </div>
-          <p class="text-sm font-thin text-center my-4">
+          <div class="grid grid-flow-col gap-0 ">
+        <div class="">
+          <p class="text-sm font-thin text-center my-4 mx-auto">
             @Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
             similique.
           </p>
         </div>
+        </div>
+        </div>
       </section>
       <!-- Operating Environment -->
-      <section class="sm:w-7/12 sm:mx-auto px-6 sm:px-0 py-16">
+      <section class=" sm:mx-auto h-[120vh] sm:h-[100vh] overflow-x-hidden overflow-y-hidden">
+        <div class="sm:w-[70vw] mx-auto">
         <h2 class="text-xl font-bold mb-10 text-center sm:text-left">
           Operating Environment
         </h2>
-        <div class="shadow p-10">
+        <div class="shadow p-10 mx-4">
           <h3 class="text-lg font-medium">[Operating Environment]</h3>
           <p class="text-sm font-light ml-[-10px]">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
@@ -472,9 +533,20 @@
             </p>
           </div>
         </div>
+      </div>
+        <div
+        class="float-right w-[40%] relative z-0 mr-[-1rem] sm:mr-[-20rem] 2xl:mr-[-30rem] mt-[1rem]"
+      >
+        <img
+          src="assets/img-7.svg"
+          alt="first banner image, has animated images of people"
+          className=""
+        />
+      </div>
+    
       </section>
       <!-- Compare Plans -->
-      <section class="bg-[#f5f5f5] h-[90vh] py-16">
+      <section class="bg-[#f5f5f5] h-[90vh] sm:h-[70vh] py-16 rekative z-10 overflow-x-hidden overflow-y-hidden">
         <div class="sm:w-7/12 px-6 sm:mx-auto">
           <h2 class="text-xl font-bold mb-10 text-center sm:text-left">
             Compare Plans
@@ -614,9 +686,9 @@
       </section>
 
       <!-- Flow -->
-      <section class="flow sm:w-7/12 mx-5 sm:mx-auto sm:h-[90vh] py-10">
+      <section class="flow sm:w-7/12 mx-5 sm:mx-auto  my-auto py-10">
         <h2 class="text-xl font-bold mb-10">Flow</h2>
-        <div>
+        <div class="sm:h-[80vh] 2xl:h-[50vh]">
           <ul role="list" class="-mb-8">
             <li>
               <div class="relative pb-8">
@@ -743,11 +815,32 @@
               </div>
             </li>
           </ul>
+          <div
+            class="sm:float-right w-[80%] sm:-mr-50 sm:mt-16 mx-auto mt-10"
+          >
+            <img
+              src="assets/img-10.svg"
+              alt="first banner image, has animated images of people"
+              className=""
+            />
+          </div>
         </div>
       </section>
       <!-- Contact section -->
-      <section class="bg-[#f5f5f5] py-10">
-        <div class="sm:w-7/12 sm:mx-auto mx-3 bg-white p-8 shadow">
+      <section class="bg-[#f5f5f5] py-10 mt-20 overflow-x-hidden">
+        <div class="grid grid-flow-col auto-cols-max z-0 relative">
+          <div class="w-[10vw] mt-[25rem]">
+          <div
+          class=" w-[250%] ml-[-3rem] sm:ml-[-8rem] z-0 relative"
+        >
+          <img
+            src="assets/img-4.svg"
+            alt="first banner image, has animated images of people"
+            className=""
+          />
+        </div>
+      </div>
+        <div class=" sm:mx-0 bg-white p-8 shadow w-[80vw] bg-[#f5f5f5] z-10 relative">
           <h2 class="text-center text-lg font-bold">Contact</h2>
           <hr class="my-6" />
           <form action="" class="text-sm">
@@ -1005,7 +1098,18 @@
               </button>
             </div>
           </form>
+         
         </div>
+        <div
+        class="w-full sm:w-[150%] sm:w-[10vw] ml-[-15rem] sm:ml-[-10rem] z-0 relative"
+      >
+        <img
+          src="assets/img-3.svg"
+          alt="first banner image, has animated images of people"
+          className=""
+        />
+      </div>
+      </div>
       </section>
     </main>
   </body>
